@@ -1,0 +1,41 @@
+{
+  "name": "zah-workshop",
+  "version": "1.0.0",
+  "description": "ZAH Workshop: a keynote that runs in a browser instead of a slide app. Eleven scenes of a fixed arc, every word from one content file, every colour from CSS variables.",
+  "license": "UNLICENSED",
+  "private": false,
+  "type": "module",
+  "main": "./src/index.js",
+  "types": "./src/types.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/types.d.ts",
+      "default": "./src/index.js"
+    },
+    "./wire": {
+      "types": "./src/wire.d.ts",
+      "default": "./src/wire.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "zah-workshop": "./bin/zah-workshop.js"
+  },
+  "files": [
+    "src",
+    "bin",
+    "examples",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "node test/fidelity.test.mjs",
+    "demo": "node bin/zah-workshop.js build examples/starter/content.json --assets examples/starter/assets --out dist/starter && node bin/zah-workshop.js build examples/zah/content.mjs --out dist/zah"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Yawitazah/zah-workshop.git"
+  }
+}

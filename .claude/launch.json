@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "workshop-dist",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "4360", "--directory", "dist"],
+      "port": 4360
+    }
+  ]
+}

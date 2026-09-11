@@ -1,0 +1,210 @@
+{
+  "id": "maple-street-workshop",
+  "title": "Maple Street Fitness — The Workshop",
+  "brand": {
+    "name": "Maple Street Fitness",
+    "logo": "/workshop/assets/logo.svg",
+    "logoOnDark": "/workshop/assets/logo-on-dark.svg",
+    "site": "maplestreetfitness.com"
+  },
+  "theme": {
+    "accent": "#E0A030",
+    "ink": "#123524",
+    "paper": "#FBFAF6"
+  },
+  "qr": { "image": "/workshop/assets/qr.svg", "alt": "Scan to open the giveaways", "label": "Scan me" },
+  "scenes": [
+    {
+      "type": "cover",
+      "headline": ["Strong for the life", "you actually live."],
+      "tagline": "Coaching.  Nutrition.  A plan that survives Monday.",
+      "chips": ["Strength", "Nutrition", "Habits", "Group Coaching", "Online Plans"],
+      "ticker": ["Strength", "Mobility", "Nutrition", "Sleep", "Habits", "Accountability", "Small Group", "Online Coaching"]
+    },
+    {
+      "type": "receipts",
+      "eyebrow": "The receipts",
+      "headline": "We don't sell workouts.",
+      "headlineAccent": "We change routines.",
+      "intro": "Eight years of coaching real people with real schedules. Here is what the numbers look like when the plan fits the life.",
+      "items": [
+        { "value": 412, "post": "+", "context": "Clients coached", "label": "In person and online, since 2018." },
+        { "value": 92, "post": "%", "context": "Still training at 12 months", "label": "The number most gyms will not show you." },
+        { "pre": "", "value": 3.4, "decimals": 1, "post": "x", "context": "Average strength gain", "label": "Squat, hinge, press, pull. Measured, not guessed." },
+        { "value": 18, "post": "lb", "context": "Median change in a year", "label": "Slow, kept, and never from a crash diet." }
+      ],
+      "outro": "This is the engine. A plan that fits, tracked every week, adjusted before it breaks."
+    },
+    {
+      "type": "meet",
+      "label": "Meet Jordan",
+      "photo": "/workshop/assets/headshot.svg",
+      "photoAlt": "Jordan",
+      "eyebrow": "Coach first. Teacher now.",
+      "headline": "I'm Jordan.",
+      "paragraphs": [
+        "Eight years coaching strength and nutrition for people who have jobs, kids and knees. I write the programs, run the floor, and cook half the recipes myself.",
+        "The plan is the product. If it does not survive a bad week, it was never a plan."
+      ]
+    },
+    {
+      "type": "learn",
+      "eyebrow": "The next 45 minutes",
+      "headline": ["Here's what you're", "walking away with."],
+      "items": [
+        { "title": "How a week of training actually fits a week of life", "body": "The three-session skeleton I build every plan on." },
+        { "title": "The two numbers that predict whether you keep going", "body": "Neither of them is the number on the scale." },
+        { "title": "What to eat without a spreadsheet", "body": "A plate, not a macro tracker." },
+        { "title": "A giveaway for everyone in the room", "body": "Everything you need to take the first step today." }
+      ]
+    },
+    {
+      "type": "products",
+      "eyebrow": "Built for members",
+      "headline": ["I don't just coach.", "I built the tools."],
+      "intro": "Real tools. In use every day by real members.",
+      "items": [
+        { "name": "Maple App", "blurb": "Your plan, your check-ins, your coach. One place.", "icon": "/workshop/assets/icon-app.svg", "screen": { "image": "/workshop/assets/screen-app.svg", "alt": "Maple App" }, "button": { "label": "See the app", "href": "https://example.com/app" } },
+        { "name": "12-Week Plan", "blurb": "The starter program, written for a three-day week.", "icon": "/workshop/assets/icon-plan.svg", "screen": { "icon": "/workshop/assets/icon-plan.svg", "background": "linear-gradient(150deg,#3b2a1a,#6b4a2a)", "size": 88 }, "button": { "label": "Preview", "modal": "plan" } },
+        { "name": "The Pantry", "blurb": "The shop: bands, bars, and the recipe cards.", "icon": "/workshop/assets/icon-shop.svg", "screen": { "icon": "/workshop/assets/icon-shop.svg", "background": "linear-gradient(150deg,#0e2a1c,#245a40)", "size": 96 }, "button": { "label": "Open the shop", "href": "https://example.com/shop" } }
+      ]
+    },
+    {
+      "type": "spotlight",
+      "label": "Maple App",
+      "logo": "/workshop/assets/icon-app.svg",
+      "name": "Maple App",
+      "intro": "Your plan on your phone. Check in weekly. Your coach sees it the same day.",
+      "features": [
+        { "title": "Plan", "body": "Every session, every weight, already filled in." },
+        { "title": "Check in", "body": "Two minutes a week. Photos optional." },
+        { "title": "Adjust", "body": "The plan changes before you stall, not after." }
+      ],
+      "screen": {
+        "kind": "dashboard",
+        "logo": "/workshop/assets/icon-app.svg",
+        "title": "Maple App",
+        "subtitle": "Coach view",
+        "live": "Live",
+        "avatar": "J",
+        "metrics": [
+          { "label": "Active members", "value": 148 },
+          { "label": "Check-ins this week", "value": 91, "post": "%", "accent": true },
+          { "label": "Sessions logged", "value": 412 },
+          { "label": "Plans adjusted", "value": 23 }
+        ],
+        "chart": { "title": "Check-ins this week", "delta": "▲ 6%", "bars": [50, 58, 66, 74, 90, 100] },
+        "list": {
+          "title": "Recent check-ins",
+          "rows": [
+            { "initial": "A", "name": "Aisha R.", "status": "On track", "tone": "green" },
+            { "initial": "T", "name": "Tom B.", "status": "Adjusted", "tone": "amber" },
+            { "initial": "L", "name": "Lena K.", "status": "New PR", "tone": "blue" }
+          ]
+        }
+      },
+      "button": { "label": "See the app", "href": "https://example.com/app" }
+    },
+    {
+      "type": "person",
+      "label": "Member",
+      "watermark": "AR",
+      "eyebrow": "Member spotlight",
+      "headline": ["This is who it", "was built for."],
+      "photo": "/workshop/assets/client.svg",
+      "name": "Aisha Reyes",
+      "titles": ["Nurse, two kids, night shifts", "Member since 2023"],
+      "paragraphs": [
+        "Three sessions a week around a rota that changes every month.",
+        "The app was built around her week: the plan moves when her shifts do."
+      ]
+    },
+    {
+      "type": "pairing",
+      "label": "Aisha & the app",
+      "left": { "image": "/workshop/assets/client.svg", "name": "Aisha Reyes" },
+      "right": { "image": "/workshop/assets/icon-app.svg", "name": "Maple App" },
+      "tagline": "Built around a week that never looks the same twice.",
+      "taglineAccent": "Ready for yours."
+    },
+    {
+      "type": "statement",
+      "label": "Diagnosis",
+      "eyebrow": "Sit down. Let's look.",
+      "headline": ["Live Routine", "Diagnosis"],
+      "sub": "One person's week. Rebuilt on the spot."
+    },
+    {
+      "type": "build",
+      "eyebrow": "Right now, in front of you",
+      "headline": "Now we build it.",
+      "headlineAccent": "Live.",
+      "items": [
+        { "title": "The week", "body": "Three sessions placed where they will actually happen." },
+        { "title": "The sessions", "body": "Written in the app while you watch." },
+        { "title": "The plate", "body": "Breakfast, lunch, dinner. No spreadsheet." },
+        { "title": "The check-in", "body": "Set for Sunday night. Two minutes." }
+      ],
+      "outro": "Items check off as we go. Then we leave this screen and do it for real."
+    },
+    {
+      "type": "offer",
+      "hero": { "image": "/workshop/assets/hero.svg", "alt": "Jordan at the workshop" },
+      "eyebrow": "The big giveaway",
+      "headline": ["If today gave you something,", "wait until you see what's next."],
+      "sub": "Everything here is waiting behind the QR code.",
+      "rows": [
+        {
+          "kind": "feature",
+          "image": "/workshop/assets/coin.svg", "alt": "First session token",
+          "badge": "The first session",
+          "title": "Your first session is on us",
+          "body": "Everyone in the room gets one coached session, in person or online, no card and no catch. Bring the week you actually have.",
+          "button": { "label": "Claim my session", "href": "https://example.com/claim" }
+        },
+        {
+          "kind": "book",
+          "title": "The guide", "badge": "Free today", "badgeTone": "accent",
+          "name": "Strong for Real Life",
+          "body": "The three-day skeleton, the plate, and the check-in. Twenty pages, no fluff.",
+          "image": "/workshop/assets/book.svg", "alt": "Strong for Real Life guide", "imageBackground": "#0e2a1c", "imageSide": "right",
+          "imageAction": { "label": "Click to enlarge", "modal": "guide" },
+          "button": { "label": "Get the guide", "href": "https://example.com/guide" }
+        },
+        [
+          {
+            "kind": "brand",
+            "header": { "image": "/workshop/assets/icon-app.svg", "alt": "Maple App", "name": "Maple App", "sub": "Your plan, your coach", "imageRadius": "15px", "imageShadow": true },
+            "title": "Free for 30 days", "badge": "No card",
+            "body": "The full app, with a coach reading your check-ins.",
+            "button": { "label": "Start the trial", "href": "https://example.com/app" }
+          },
+          {
+            "kind": "brand",
+            "header": { "image": "/workshop/assets/icon-plan.svg", "alt": "12-Week Plan", "name": "12-Week Plan", "sub": "The starter program", "background": "linear-gradient(135deg,#3b2a1a 0%,#6b4a2a 100%)", "imageRadius": "15px" },
+            "title": "Half price this week", "badge": "Room only", "badgeColor": "#6b4a2a",
+            "body": "Use the code on the back of your ticket.",
+            "button": { "label": "See the plan", "modal": "plan" }
+          }
+        ],
+        {
+          "kind": "simple",
+          "icon": "calendar",
+          "title": "Book a consultation", "badge": "Book me",
+          "body": "Want what you saw today, for your week? Book a call at maplestreetfitness.com.",
+          "button": { "label": "Book a call", "href": "https://example.com/book" }
+        }
+      ],
+      "panel": {
+        "headline": ["Scan to claim", "your session"],
+        "qr": { "image": "/workshop/assets/qr.svg", "alt": "Scan to open the giveaways" },
+        "lines": ["Free giveaways", "Book a consultation"],
+        "button": { "label": "Claim my session", "href": "https://example.com/claim" }
+      }
+    }
+  ],
+  "modals": {
+    "guide": { "image": "/workshop/assets/book.svg", "alt": "Strong for Real Life guide" },
+    "plan": { "image": "/workshop/assets/screen-app.svg", "alt": "The 12-Week Plan" }
+  }
+}
