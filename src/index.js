@@ -98,6 +98,7 @@ export function pageHtml(rendered, { title = "Workshop", wireSrc = "./wire.js", 
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>${esc(title)}</title>
 <meta name="robots" content="noindex">
+<link rel="icon" href="data:,">
 ${fonts}
 <style>html,body{margin:0;padding:0;background:var(--zw-paper,#fff)}
 ${rendered.css}</style>
