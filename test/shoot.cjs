@@ -9,9 +9,10 @@ const fs = require("fs"); const path = require("path");
   await page.setViewport({ width: 1440, height: 900, deviceScaleFactor: 1 });
   page.on("pageerror", (e) => console.log("PAGEERROR", e.message));
   page.on("console", (m) => { if (m.type() === "error") console.log("CONSOLE", m.text()); });
-  await page.goto(url, { waitUntil: "networkidle0" });
-  await page.evaluate(() => { try { localStorage.clear(); } catch {} });
-  await page.reload({ waitUntil: "networkidle0" });
+  // "load", not networkidle: a real site keeps beacons and polls open forever.
+  await page.evaluateOnNewDocument(() => { try { localStorage.clear(); } catch {} });
+  await page.goto(url, { waitUntil: "load", timeout: 60000 });
+  await page.waitForSelector("#zw-main", { timeout: 20000 });
   await new Promise((r) => setTimeout(r, 3200));
   const n = await page.evaluate(() => document.querySelectorAll("#zw-main [data-idx]").length);
   for (let i = 0; i < n; i++) {

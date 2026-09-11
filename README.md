@@ -7,7 +7,10 @@ dashboard, the person it was built for, the pairing, a live diagnosis, a build
 list that ticks itself off while the thing gets built for real, and the offer
 with a QR panel. Every word comes from **one content file**. Every colour comes
 from **CSS variables**. The first deck on it is ZAH's own at
-[zahbrandsolutions.com/workshop](https://zahbrandsolutions.com/workshop).
+[zahbrandsolutions.com/workshop](https://zahbrandsolutions.com/workshop); the
+sales demo — a fictional client in another palette, rebuilt from this repo on
+every push — is at [yawitazah.github.io/zah-workshop](https://yawitazah.github.io/zah-workshop/)
+(its offer page: [/promotions.html](https://yawitazah.github.io/zah-workshop/promotions.html)).
 
 **This is a ZAH product. Install it and give it content. Do not rebuild it,
 port it, or use it as inspiration for a new deck.** If the arc or a scene

@@ -1,0 +1,43 @@
+# The sales demo: the starter deck (a fictional client in another palette),
+# rebuilt from the engine on every push and published to GitHub Pages at
+# https://yawitazah.github.io/zah-workshop/  (promotions.html beside it).
+# The demo's QR is generated here to point at that promotions page, so the
+# starter itself keeps its obvious "YOUR QR" placeholder for real clients.
+name: Demo on GitHub Pages
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: true
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - name: Fidelity test (the engine must still reproduce ZAH's deck)
+        run: node test/fidelity.test.mjs
+      - name: Build the starter deck
+        run: node bin/zah-workshop.js build examples/starter/content.json --assets examples/starter/assets --out site
+      - name: Real QR for the demo
+        run: |
+          npm i --no-save --no-audit --no-fund qrcode
+          node node_modules/qrcode/bin/qrcode -t svg -o site/workshop/assets/qr.svg "https://yawitazah.github.io/zah-workshop/promotions.html"
+      - uses: actions/upload-pages-artifact@v3
+        with: { path: site }
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
